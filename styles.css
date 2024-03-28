@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #46d2a3, #0EA463);
+    background-repeat: no-repeat;
+    background-size: 400%;
+}
+
+
+.coppied{
+    position: absolute;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 7px;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+    border: none;
+    display: none;
+    animation: appear 0.3s;
+    transition: opacity 0.3s ease-out;
+}
+
+@keyframes appear {
+    from{
+        bottom: 10px;
+        opacity: 0;
+    }
+
+    to{
+        bottom: 25px;
+        opacity: 1;
+    }
+}
+
+
+
+.container{
+    background-color: rgba(255, 255, 255, 0.825);
+    border-radius: 10px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 80x;
+    padding: 20px 40px;
+}
+
+.header{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    resize: vertical;
+    outline: none;
+    min-height: 50px;
+}
+
+.button{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: none;
+    background-color: #0EA463;
+    color: white;
+    font-size: 15px;
+    box-shadow: 0px 8px 24px #0ea46333;
+    cursor: pointer;   
+}
+
+.button:hover{
+    background-color: #0a8c54;
+}
+
+.button:active{
+    background-color: #087345;
+}
+
+.choices{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sampleText{
+    border: 1px solid rgb(154, 154, 154);
+}
+
+
+.copy{
+
+    width: fit-content;
+    text-align: right;
+    background-color: #0EA463;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 8px 24px #0ea46333;
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    bottom: 15px;
+
+}
+
+
+.copy:hover{
+    background-color: #129e61;
+}
+
+.copy:active{
+    background-color: #0f8854;
+}
+
+
+
+.output{
+    position: relative;
+}
+
+
+
