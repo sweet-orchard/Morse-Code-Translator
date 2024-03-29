@@ -46,11 +46,13 @@ body{
     background-color: rgba(255, 255, 255, 0.825);
     border-radius: 10px;
     max-width: 500px;
+    min-width: 400px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 80px;
-    margin-bottom: 80x;
+    margin-top: 45px;
+    margin-bottom: 20px;
     padding: 20px 40px;
+
 }
 
 .header{
@@ -58,6 +60,18 @@ body{
     font-weight: 600;
     margin-bottom: 10px;
 }
+
+@media(max-width: 450px){
+    .header{
+        font-size: 1.5rem;
+    }
+    .container{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+
 
 .textarea{
     width: 100%;
@@ -133,6 +147,23 @@ body{
 .output{
     position: relative;
 }
+
+.toMorseCode i{
+    margin-right: 10px;
+}
+
+.choices a{
+    text-decoration: none;
+    color: black;
+
+    transition: all 0.3s ease;
+}
+
+.choices a:hover {
+    color: #04663c;
+}
+
+
 
 
 
