@@ -19,7 +19,7 @@ translateFrom.addEventListener("click", () => {
                 break;
 
             case '-..':
-                fromMorseCodeeCode += 'D';
+                fromMorseCode += 'D';
                 break;
 
             case '..-.':
