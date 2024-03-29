@@ -173,7 +173,7 @@ translateBtn.addEventListener("click", () => {
                 break;
 
             case '.':
-                morseCode += '/ .-.-.- ';
+                morseCode += '.-.-.- ';
                 break;
 
             case ',':
@@ -181,11 +181,11 @@ translateBtn.addEventListener("click", () => {
                 break;
 
             case '?':
-                morseCode += '/ ..--.. ';
+                morseCode += '..--.. ';
                 break;
 
             case '!':
-                morseCode += '/ -.-.--';
+                morseCode += '-.-.-- ';
                 break;
 
             default:
@@ -197,3 +197,9 @@ translateBtn.addEventListener("click", () => {
 
     document.getElementById('myTextArea').value = morseCode;
 }); 
+
+
+
+
+
+
